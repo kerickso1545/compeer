@@ -152,13 +152,14 @@ p:last-child { margin-bottom: 0; }
 }
 
 .nav__logo {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--navy);
-  letter-spacing: -.02em;
+  display: flex;
+  align-items: center;
 }
-.nav__logo span { color: var(--teal); }
-.nav__logo:hover { color: var(--navy); }
+.nav__logo img {
+  height: 40px;
+  width: auto;
+}
+.nav__logo:hover { opacity: .85; }
 
 .nav__links {
   display: flex;
