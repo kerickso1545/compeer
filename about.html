@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Compeer Solutions</title>
+  <meta name="description" content="Meet the Compeer Solutions team — senior healthcare subject matter experts with deep experience in HIT, interoperability, and clinical data.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .bio-section {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .bio-section:last-of-type { border-bottom: none; }
+
+    .bio-grid {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .bio-photo-wrap {
+      position: sticky;
+      top: 88px;
+    }
+
+    .bio-photo {
+      width: 100%;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .bio-name {
+      font-size: 1.75rem;
+      color: var(--navy);
+      margin-bottom: .25rem;
+    }
+
+    .bio-role {
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 1.25rem;
+    }
+
+    .bio-text {
+      color: var(--gray-600);
+      font-size: .97rem;
+      line-height: 1.8;
+      margin-bottom: .9rem;
+    }
+
+    .bio-credentials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin-top: 1.25rem;
+    }
+
+    .credential-tag {
+      display: inline-block;
+      font-size: .78rem;
+      font-weight: 600;
+      padding: .3rem .75rem;
+      background: var(--gray-100);
+      border: 1px solid var(--gray-200);
+      border-radius: 999px;
+      color: var(--gray-600);
+    }
+
+    @media (max-width: 700px) {
+      .bio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+      .bio-photo-wrap {
+        position: static;
+        max-width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Compeer<span>.</span></a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact Us</a></li>
+      </ul>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Who We Are</h1>
+      <p>Senior healthcare subject matter experts with decades of real-world experience in health information technology and data exchange.</p>
+    </div>
+  </section>
+
+  <!-- COMPANY INTRO -->
+  <section class="section">
+    <div class="container">
+      <div style="max-width:760px; margin:0 auto; text-align:center;">
+        <span class="section-label">Our Foundation</span>
+        <h2 class="section-title">Experience That Spans the Entire Ecosystem</h2>
+        <p style="color:var(--gray-600); font-size:1.05rem; line-height:1.8;">
+          The Compeer management team is composed of senior healthcare subject matter experts.
+          Our team represents a cross-section of industry experience with a deep history around
+          information exchange and business process improvement. Our health information technology
+          expertise is blended with a unique understanding of clinical data, Medicare, and Medicaid
+          — giving us powerful business insights that generalist consultants simply can't match.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM BIOS -->
+  <section class="section section--alt">
+    <div class="container">
+
+      <!-- Chris Smith -->
+      <div class="bio-section">
+        <div class="bio-grid">
+          <div class="bio-photo-wrap">
+            <img class="bio-photo" src="images/ChrisSmith.jpg" alt="Chris Smith">
+          </div>
+          <div>
+            <h2 class="bio-name">Chris Smith</h2>
+            <div class="bio-role">Founder &amp; CEO</div>
+            <p class="bio-text">
+              Chris Smith is a Subject Matter Expert in Health Information Technology architecture,
+              systems, and infrastructure, with a specialization in clinical data technical strategy.
+              A well-known and published author, speaker, and industry committee member, Chris has
+              spent his career shaping how clinical data flows across the healthcare landscape.
+            </p>
+            <p class="bio-text">
+              Among his career highlights, Chris was part of one of the first teams to implement
+              internet connectivity to the Centers for Medicare and Medicaid Services (CMS) — a
+              foundational milestone in healthcare data exchange. His breadth of experience spans
+              Health Information Exchange design, standards development, and clinical data architecture
+              at national and international scales. His hands-on work includes Medicaid IT modernization,
+              FHIR API compliance with the CMS Final Rule, and bi-directional EHR clinical data exchange
+              for state Medicaid agencies.
+            </p>
+            <div class="bio-credentials">
+              <span class="credential-tag">BS Healthcare Administration — College of Saint Scholastica</span>
+              <span class="credential-tag">MBA (IT Focus) — Augsburg University</span>
+              <span class="credential-tag">HIE Architecture</span>
+              <span class="credential-tag">FHIR &amp; CMS Compliance</span>
+              <span class="credential-tag">Medicaid IT Modernization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kevin Erickson -->
+      <div class="bio-section">
+        <div class="bio-grid">
+          <div class="bio-photo-wrap">
+            <img class="bio-photo" src="images/KevinErickson.jpg" alt="Kevin Erickson">
+          </div>
+          <div>
+            <h2 class="bio-name">Kevin Erickson</h2>
+            <div class="bio-role">Founder &amp; CTO</div>
+            <p class="bio-text">
+              Kevin Erickson has an in-depth understanding of operations and IT management in the
+              healthcare payer industry. With more than 25 years of experience across healthcare,
+              information technology, operations management, business process improvement, and
+              business development, Kevin brings a breadth of knowledge that bridges the business
+              and technical worlds.
+            </p>
+            <p class="bio-text">
+              Kevin spent over two decades at Noridian, a Blue Cross Blue Shield plan and Medicare
+              Administrative Contractor, developing deep expertise in Medicare payer operations from
+              the ground up. That foundation — spanning technical systems, business operations, and
+              regulatory compliance — informs his approach to every engagement. He has worked closely
+              with stakeholders in the provider, payer, and regulatory fields across Medicare,
+              Medicaid, and commercial payer environments.
+            </p>
+            <div class="bio-credentials">
+              <span class="credential-tag">BS Computer Science — North Dakota State University</span>
+              <span class="credential-tag">Medicare Administrative Contractor (MAC) Expertise</span>
+              <span class="credential-tag">Healthcare Payer Operations</span>
+              <span class="credential-tag">Medicare &amp; Medicaid</span>
+              <span class="credential-tag">Business Process Improvement</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ian Morris -->
+      <div class="bio-section">
+        <div class="bio-grid">
+          <div class="bio-photo-wrap">
+            <img class="bio-photo" src="images/IanMorris.jpg" alt="Ian Morris">
+          </div>
+          <div>
+            <h2 class="bio-name">Ian Morris</h2>
+            <div class="bio-role">COO</div>
+            <p class="bio-text">
+              Ian Morris has more than 15 years of experience in healthcare interoperability, with
+              a focus on connecting providers to Medicare, Medicaid, VA, and Social Security
+              Administration systems. He has successfully managed projects for payers and providers,
+              exchanging both medical records and claims data across complex institutional boundaries.
+            </p>
+            <p class="bio-text">
+              In 2016, Ian completed a first-of-its-kind project connecting a large academic medical
+              center to a Medicaid agency for the exchange of patient clinical summaries — a
+              milestone that demonstrated the real-world viability of large-scale, cross-sector
+              clinical data sharing. His experience includes clinical data interoperability program
+              management for state Medicaid agencies, including data lake architecture and
+              governance initiatives. Prior to Compeer, Ian held roles at UnitedHealthcare and
+              McKesson, and has worked as an independent consultant across the healthcare IT space.
+            </p>
+            <div class="bio-credentials">
+              <span class="credential-tag">BA — University of Minnesota</span>
+              <span class="credential-tag">Healthcare Interoperability</span>
+              <span class="credential-tag">Clinical Data Exchange</span>
+              <span class="credential-tag">Medicaid Systems</span>
+              <span class="credential-tag">Data Governance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Richard Zhang -->
+      <div class="bio-section">
+        <div class="bio-grid">
+          <div class="bio-photo-wrap">
+            <img class="bio-photo" src="images/RichardZhang.jpg" alt="Richard Zhang">
+          </div>
+          <div>
+            <h2 class="bio-name">Richard Zhang</h2>
+            <div class="bio-role">Chief Architect</div>
+            <p class="bio-text">
+              Richard Zhang is an expert in IT service delivery with a specialization in healthcare
+              interoperability and analytics. His career includes successful implementations of
+              large-scale healthcare IT projects, including an innovative, high-speed Enterprise
+              Master Patient Index (EMPI) — a technically demanding system at the heart of
+              patient-matching and data integrity.
+            </p>
+            <p class="bio-text">
+              Richard brings enterprise pedigree from his time at Deloitte Consulting, SAP, and
+              Sun Microsystems — where he was named Employee of the Year. His combination of
+              global enterprise consulting experience with deep healthcare domain knowledge makes
+              him uniquely suited to architect complex, scalable interoperability solutions. He
+              continues to publish actively on emerging topics including generative AI implementation
+              and healthcare data governance.
+            </p>
+            <div class="bio-credentials">
+              <span class="credential-tag">BS Electronic Physics — Peking University</span>
+              <span class="credential-tag">MS Engineering Sciences — Dartmouth</span>
+              <span class="credential-tag">Cert. Technology &amp; Value Chain — MIT Sloan</span>
+              <span class="credential-tag">Healthcare Analytics</span>
+              <span class="credential-tag">AI &amp; Data Governance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="container">
+      <h2>Want to Work With Our Team?</h2>
+      <p>We're always open to conversations about challenging healthcare IT problems. Let's connect.</p>
+      <a href="contact.html" class="btn btn-outline" style="border-color:rgba(255,255,255,.7); font-size:1rem; padding:.9rem 2rem;">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <div class="footer__brand">Compeer<span>.</span></div>
+          <p class="footer__tagline">Providing consulting services and expertise to the healthcare ecosystem — payers, providers, and health information exchanges.</p>
+        </div>
+        <div>
+          <div class="footer__heading">Navigation</div>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer__heading">Contact</div>
+          <ul class="footer__links">
+            <li><a href="mailto:info@gocompeer.com">info@gocompeer.com</a></li>
+            <li><a href="tel:6122991616">(612) 299-1616</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        &copy; <span id="year"></span> Compeer Solutions, Inc. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
